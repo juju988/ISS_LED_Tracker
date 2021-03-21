@@ -40,7 +40,7 @@ def issOverHorizon():
     
     # set home location using ephem Observer function
     home = ephem.Observer()
-    home.lon, home.lat = 'XXX', 'XXX' # replace the XXX with your own longitude and latitude (- indicates west and south)
+    home.lon, home.lat = 'XXX', 'XXX' # replace the XXX with your own longitude (east/west) and latitude (north/south) (- indicates west and south)
     home.elevation = XX # replace XX with your height above sea level in meters
     
     # check if ISS is over 10 degrees above horizon
