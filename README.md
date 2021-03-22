@@ -10,6 +10,8 @@ when it's over my horizon.
 
 V2.0 of the code works well but I'm happy to take advice to clean it up.
 
+V2.1 includes an exception loop when requesting the TLE data.  If connection is lost the LEDs turn red.
+
 
 Lego International Space Station - https://www.lego.com/en-gb/product/international-space-station-21321
 Neopixels - https://smile.amazon.co.uk/gp/product/B07TPSB35N/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1
