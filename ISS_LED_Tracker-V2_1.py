@@ -32,6 +32,9 @@ def issError():
 
 # function to see if ISS is over observer's horizon
 def issOverHorizon():
+    # initialise the data variable
+    data = ''
+    
     # use requests module to extract text file from URL
     try:
         response = requests.get("https://www.celestrak.com/NORAD/elements/stations.txt")
@@ -39,6 +42,8 @@ def issOverHorizon():
     except:
         issError()
         print("Do something magic, the internet is broken")
+        time.sleep(30)  #wait for 30 seconds
+        return False    #return False just so we successfully come back out of this function
     
     # use string splitting to extract relevant ISS data.
     # this was done by trial and error and may not be accurate when the TLE updates every few weeks
